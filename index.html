@@ -1,113 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VyaniIndia Pvt Ltd</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-    header {
-      background: #1e2a38;
-      color: white;
-      padding: 15px;
-      text-align: center;
-    }
-    nav {
-      background: #0d6efd;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .hero {
-      background: linear-gradient(to right, #0d6efd, #00c6ff);
-      color: white;
-      text-align: center;
-      padding: 80px 20px;
-    }
-    .section {
-      padding: 40px;
-      text-align: center;
-    }
-    .services {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-    .card {
-      background: #f4f4f4;
-      padding: 20px;
-      border-radius: 10px;
-      width: 250px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    footer {
-      background: #1e2a38;
-      color: white;
-      text-align: center;
-      padding: 15px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VyaniIndia Pvt Ltd</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #f5f7fa;
+}
+
+/* Header */
+header {
+  background: #111827;
+  color: white;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 22px;
+}
+
+/* Nav */
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+nav a:hover {
+  color: #00c6ff;
+}
+
+/* Hero */
+.hero {
+  height: 90vh;
+  background: linear-gradient(120deg, #0d6efd, #00c6ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  flex-direction: column;
+}
+
+.hero h2 {
+  font-size: 40px;
+}
+.hero p {
+  margin: 15px 0;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: white;
+  color: #0d6efd;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: black;
+  color: white;
+}
+
+/* Section */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Services */
+.services {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  width: 260px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Contact */
+.contact p {
+  margin: 10px 0;
+}
+
+/* Footer */
+footer {
+  background: #111827;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+/* WhatsApp Button */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+}
+</style>
 </head>
 
 <body>
 
 <header>
   <h1>VyaniIndia Pvt Ltd</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
-<nav>
-  <a href="#">Home</a>
-  <a href="#about">About</a>
-  <a href="#services">Services</a>
-  <a href="#contact">Contact</a>
-</nav>
-
 <section class="hero">
-  <h2>Welcome to VyaniIndia</h2>
-  <p>We provide reliable business & consulting solutions</p>
+  <h2>Grow Your Business With Us 🚀</h2>
+  <p>Professional Business & Trading Solutions</p>
+  <a href="#contact" class="btn">Get Started</a>
 </section>
 
 <section id="about" class="section">
   <h2>About Us</h2>
-  <p>VyaniIndia Pvt Ltd delivers high-quality services and builds strong client relationships.</p>
+  <p>We help businesses scale with modern strategies and trusted services.</p>
 </section>
 
 <section id="services" class="section">
   <h2>Our Services</h2>
   <div class="services">
     <div class="card">
-      <h3>Business Support</h3>
-      <p>Helping businesses grow with smart strategies.</p>
+      <h3>Business Growth</h3>
+      <p>We help companies grow faster with smart planning.</p>
     </div>
     <div class="card">
-      <h3>Trading Services</h3>
-      <p>Reliable and efficient trading solutions.</p>
+      <h3>Trading</h3>
+      <p>Secure and efficient trading services.</p>
     </div>
     <div class="card">
       <h3>Consulting</h3>
-      <p>Expert advice for your business success.</p>
+      <p>Expert advice to boost your business success.</p>
     </div>
   </div>
 </section>
 
-<section id="contact" class="section">
+<section id="contact" class="section contact">
   <h2>Contact Us</h2>
   <p>Email: vyaniindiapvtltd@gmail.com</p>
   <p>Phone: +91 9015044445</p>
 </section>
 
 <footer>
-  <p>© 2026 VyaniIndia Pvt Ltd | All Rights Reserved</p>
+  <p>© 2026 VyaniIndia Pvt Ltd</p>
 </footer>
+
+<!-- WhatsApp -->
+<a class="whatsapp" href="https://wa.me/919015044445" target="_blank">
+  Chat
+</a>
 
 </body>
 </html>
